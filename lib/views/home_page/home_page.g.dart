@@ -44,11 +44,11 @@ class _HomePage extends State<HomePage> {
         ),
         Positioned(
           left: MediaQuery.of(context).size.width * 0.092,
-          width: MediaQuery.of(context).size.width * 0.814,
-          top: 283.0,
+          width: MediaQuery.of(context).size.width * 0.817,
+          top: 269.0,
           height: 51.0,
           child: Center(
-              child: Container(height: 51.0, width: 293.0, child: AddPerson())),
+              child: Container(height: 51.0, width: 294.0, child: AddPerson())),
         ),
         Positioned(
           left: MediaQuery.of(context).size.width * 0.092,
@@ -59,10 +59,7 @@ class _HomePage extends State<HomePage> {
               child: Container(
                   height: 51.0,
                   width: 294.0,
-                  child: ShowPersonsCustom(
-                      child: AddPerson(
-                    ovrADDPerson: 'Show Persons',
-                  )))),
+                  child: ShowPersonsCustom(child: AddPerson()))),
         ),
       ]),
     );

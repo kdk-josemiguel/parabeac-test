@@ -8,15 +8,8 @@ import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
 class ChatListItem extends StatefulWidget {
-  final Widget? ovrEllipse;
-  final String? ovrThankyouThatwasveryhelpful;
-  final String? ovrJames;
-
   const ChatListItem({
     Key? key,
-    this.ovrEllipse,
-    this.ovrThankyouThatwasveryhelpful,
-    this.ovrJames,
   }) : super(key: key);
 
   @override
@@ -56,14 +49,13 @@ class _ChatListItem extends State<ChatListItem> {
                   width: 58.197,
                   top: 15.917,
                   height: 63.668,
-                  child: widget.ovrEllipse ??
-                      Image.asset(
-                        'assets/images/ellipse.png',
-                        package: 'parabeac_test',
-                        height: 63.66839599609375,
-                        width: 58.19733428955078,
-                        fit: BoxFit.none,
-                      ),
+                  child: Image.asset(
+                    'assets/images/ellipse.png',
+                    package: 'parabeac_test',
+                    height: 63.66839599609375,
+                    width: 58.19733428955078,
+                    fit: BoxFit.none,
+                  ),
                 ),
                 Positioned(
                   left: 0,
@@ -87,8 +79,7 @@ class _ChatListItem extends State<ChatListItem> {
                       height: 35.8134765625,
                       width: 239.1546630859375,
                       child: AutoSizeText(
-                        widget.ovrThankyouThatwasveryhelpful ??
-                            'Thank you! That was very helpful!',
+                        'Thank you! That was very helpful!',
                         style: TextStyle(
                           fontFamily: 'Roboto',
                           fontSize: 13,
@@ -108,7 +99,7 @@ class _ChatListItem extends State<ChatListItem> {
                       height: 17.90673828125,
                       width: 239.1546630859375,
                       child: AutoSizeText(
-                        widget.ovrJames ?? 'James',
+                        'James',
                         style: TextStyle(
                           fontFamily: 'Roboto',
                           fontSize: 13,
