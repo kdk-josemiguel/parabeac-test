@@ -9,11 +9,8 @@ import 'package:parabeac_test/widgets/form_page/custom/first_name_logic.dart';
 import 'package:parabeac_test/widgets/form_page/first_name_widget.g.dart';
 
 class FirstName extends StatefulWidget {
-  final String? ovrFirstname;
-
   const FirstName({
     Key? key,
-    this.ovrFirstname,
   }) : super(key: key);
 
   @override
