@@ -6,6 +6,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:parabeac_test/widgets/list_page/custom/back_arrow_custom.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:parabeac_test/widgets/list_page/chat_list_item.g.dart';
 
@@ -27,28 +28,11 @@ class _ListPage extends State<ListPage> {
       color: Colors.white,
       child: Stack(children: [
         Positioned(
-          left: 7.0,
+          left: 10.0,
           width: 341.0,
-          top: 87.0,
+          top: 73.0,
           height: 96.0,
           child: ChatListItem(),
-        ),
-        Positioned(
-          left: 7.0,
-          width: 341.0,
-          top: 194.0,
-          height: 96.0,
-          child: ChatListItem(
-            ovrEllipse: Image.asset(
-              'assets/images/ellipse.png',
-              package: 'parabeac_test',
-              height: MediaQuery.of(context).size.height * 0.099481862783432,
-              width: MediaQuery.of(context).size.width * 0.16165926191541885,
-              fit: BoxFit.fill,
-            ),
-            ovrThankyouThatwasveryhelpful: 'Thank you! That was very helpful!',
-            ovrJames: 'James',
-          ),
         ),
         Positioned(
           left: 56.0,
@@ -85,13 +69,14 @@ class _ListPage extends State<ListPage> {
           width: 12.0,
           top: 35.0,
           height: 21.0,
-          child: SvgPicture.asset(
-            'assets/images/backarrow.svg',
+          child: BackArrowCustom(
+              child: SvgPicture.asset(
+            'assets/images/backarrowcustom.svg',
             package: 'parabeac_test',
             height: 21.0,
             width: 12.0,
             fit: BoxFit.none,
-          ),
+          )),
         ),
       ]),
     );

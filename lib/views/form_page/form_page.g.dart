@@ -93,10 +93,7 @@ class _FormPage extends State<FormPage> {
           right: 33.0,
           top: 557.0,
           height: 51.0,
-          child: AddPersonCustom(
-              child: AddPerson(
-            ovrADDPerson: 'ADD Person',
-          )),
+          child: AddPersonCustom(child: AddPerson()),
         ),
         Positioned(
           left: 19.0,

@@ -9,11 +9,8 @@ import 'package:parabeac_test/widgets/home_page/custom/add_person_custom.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
 class AddPerson extends StatefulWidget {
-  final String? ovrADDPerson;
-
   const AddPerson({
     Key? key,
-    this.ovrADDPerson,
   }) : super(key: key);
 
   @override
@@ -54,7 +51,7 @@ class _AddPerson extends State<AddPerson> {
                   height: 15.0,
                   width: 85.0,
                   child: AutoSizeText(
-                    widget.ovrADDPerson ?? 'ADD Person',
+                    'Add Person',
                     style: TextStyle(
                       fontFamily: 'Roboto',
                       fontSize: 13,
